@@ -1,0 +1,6 @@
+http://drops.wooyun.org/papers/548
+
+1、	进入adb shell，通过pull命令获取/system/app下的HwPayService.odex、HwPayService.apk，以及/system/framework下的所有。
+2、	通过上述方法得到dex文件，然后通过ApkToolkit将dex转换为jar文件
+3、	通过jd-gui工具将jar文件反编译成java文件
+4、	搜索addJavascriptInterface接口，且targetSdkVersion等级小于17则存在webview漏洞。
