@@ -1,0 +1,10 @@
+adb pull /system/app/a.apk a.odex
+
+smali
+http://code.google.com/p/smali/downloads/list
+
+java -jar baksmali-2.0.jar –x Backup.odex –d framework
+java -Xmx512M -jar smali-2.0.jar out -o classes.dex
+
+AntiDroid工具提供了将classes.dex文件放入apk的功能
+https://code.google.com/p/anti-droid/downloads/list
