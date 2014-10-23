@@ -1,0 +1,13 @@
+1、先备份倒出app的数据
+adb backup com.android.email
+
+2、对数据进行解包
+java -jar abe.jar unpack backup.ab backup.tar
+
+3、用二进制编辑器修改数据之后，再打包
+java -jar abe.jar pack backup.tar backup.ab
+
+4、恢复手机数据
+adb restore backup.ab
+
+无需root权限
