@@ -1,0 +1,5 @@
+adb shell am start -n 应用包名/activity name
+adb shell am broadcast –a <action>
+命令：adb shell am startservice   –  <action>
+命令：adb shell am stopservice   –  <action>
+run scanner.provider.injection
