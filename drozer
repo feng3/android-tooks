@@ -1,1 +1,4 @@
 https://github.com/mwrlabs/drozer
+app.package.info -p PERMISSION
+run scanner.provider.injection
+run scanner.misc.secretcode
